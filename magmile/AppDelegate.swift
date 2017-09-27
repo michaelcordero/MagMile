@@ -82,10 +82,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
     }
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-        let name: String = user?.displayName ?? "no name found!"
+        let name: String = user?.displayName ?? "Name not found!"
         print("User: \(name) SIGNED IN WITH: \(authSource.debugDescription)")
-        
     }
+    
     func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
         return FUIAuthPickerViewController(authUI: authUI)  //optional protocol method, but lots of network errors are generated w/o
     }
