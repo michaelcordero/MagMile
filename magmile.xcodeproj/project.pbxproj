@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39D88CB65BD570D3E225A51F /* Pods_magmile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56EF44FD24F4FDCCF0C6468 /* Pods_magmile.framework */; };
 		73296BA21F7376F100EC3CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */; };
 		7371F2F21F6F9995000A21DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73BC8D731F6F96490001C6A3 /* GoogleService-Info.plist */; };
 		737464A31F6F814800B395DF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737464A21F6F814700B395DF /* TabBarViewController.swift */; };
@@ -20,9 +19,12 @@
 		73B0FE451F737C1900DAED74 /* AuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B0FE441F737C1900DAED74 /* AuthenticationType.swift */; };
 		73D9B4451F6F71AF0037A589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9B4441F6F71AF0037A589 /* AppDelegate.swift */; };
 		73D9B44C1F6F71AF0037A589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D9B44B1F6F71AF0037A589 /* Assets.xcassets */; };
+		AAE8FB6F825344372E48EFA4 /* Pods_magmile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11481B027B8EF0BDB5A03893 /* Pods-magmile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.debug.xcconfig"; sourceTree = "<group>"; };
+		70F578874B27DD312BC02946 /* Pods-magmile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.release.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.release.xcconfig"; sourceTree = "<group>"; };
 		73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		737464A21F6F814700B395DF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		737464A41F6F815F00B395DF /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +39,7 @@
 		73D9B4441F6F71AF0037A589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D9B44B1F6F71AF0037A589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D9B4501F6F71AF0037A589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88C5228FB595E1F8FB463137 /* Pods-magmile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.debug.xcconfig"; sourceTree = "<group>"; };
-		ABB3033085CF9C07289178F6 /* Pods-magmile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.release.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.release.xcconfig"; sourceTree = "<group>"; };
-		D56EF44FD24F4FDCCF0C6468 /* Pods_magmile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magmile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magmile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,20 +47,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D88CB65BD570D3E225A51F /* Pods_magmile.framework in Frameworks */,
+				AAE8FB6F825344372E48EFA4 /* Pods_magmile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09275318B69383843780AD20 /* Pods */ = {
+		48A747CD4D79CE185C5215E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88C5228FB595E1F8FB463137 /* Pods-magmile.debug.xcconfig */,
-				ABB3033085CF9C07289178F6 /* Pods-magmile.release.xcconfig */,
+				EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		73D9B4381F6F71AF0037A589 = {
@@ -68,8 +67,8 @@
 			children = (
 				73D9B4431F6F71AF0037A589 /* magmile */,
 				73D9B4421F6F71AF0037A589 /* Products */,
-				09275318B69383843780AD20 /* Pods */,
-				8914F2BF905C32E78267F4DF /* Frameworks */,
+				C7E854F4B12E7AD5F32F7B31 /* Pods */,
+				48A747CD4D79CE185C5215E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +100,13 @@
 			path = magmile;
 			sourceTree = "<group>";
 		};
-		8914F2BF905C32E78267F4DF /* Frameworks */ = {
+		C7E854F4B12E7AD5F32F7B31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D56EF44FD24F4FDCCF0C6468 /* Pods_magmile.framework */,
+				11481B027B8EF0BDB5A03893 /* Pods-magmile.debug.xcconfig */,
+				70F578874B27DD312BC02946 /* Pods-magmile.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D9B4531F6F71AF0037A589 /* Build configuration list for PBXNativeTarget "magmile" */;
 			buildPhases = (
-				86939A816971DAFF87C673E7 /* [CP] Check Pods Manifest.lock */,
+				D1F646DA8B08970BB621548E /* [CP] Check Pods Manifest.lock */,
 				73D9B43D1F6F71AF0037A589 /* Sources */,
 				73D9B43E1F6F71AF0037A589 /* Frameworks */,
 				73D9B43F1F6F71AF0037A589 /* Resources */,
-				9174F0F0B57659F41396A9BC /* [CP] Embed Pods Frameworks */,
-				9D6E5A27443308B05A69C076 /* [CP] Copy Pods Resources */,
+				06DFF36D968EE57AECE1C279 /* [CP] Embed Pods Frameworks */,
+				F2CCBF60E3E0E7097FE4B27B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,25 +180,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		86939A816971DAFF87C673E7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-magmile-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9174F0F0B57659F41396A9BC /* [CP] Embed Pods Frameworks */ = {
+		06DFF36D968EE57AECE1C279 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,18 +214,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magmile/Pods-magmile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D6E5A27443308B05A69C076 /* [CP] Copy Pods Resources */ = {
+		D1F646DA8B08970BB621548E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magmile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CCBF60E3E0E7097FE4B27B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-magmile/Pods-magmile-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseGoogleAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseTwitterAuthUI.bundle,
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
@@ -388,14 +388,14 @@
 		};
 		73D9B4541F6F71AF0037A589 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88C5228FB595E1F8FB463137 /* Pods-magmile.debug.xcconfig */;
+			baseConfigurationReference = 11481B027B8EF0BDB5A03893 /* Pods-magmile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 936B9Q7LU8;
 				INFOPLIST_FILE = magmile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codec.magmile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,14 +407,14 @@
 		};
 		73D9B4551F6F71AF0037A589 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABB3033085CF9C07289178F6 /* Pods-magmile.release.xcconfig */;
+			baseConfigurationReference = 70F578874B27DD312BC02946 /* Pods-magmile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 936B9Q7LU8;
 				INFOPLIST_FILE = magmile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codec.magmile;
 				PRODUCT_NAME = "$(TARGET_NAME)";

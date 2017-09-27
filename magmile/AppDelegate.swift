@@ -66,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
     }
     
     //Handles Google/Facebook Authentication Url
-    @available(iOS 9.0, *)
+    //@available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
         let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
         authSource = AuthenticationType.match(url: url)
