@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73296BA21F7376F100EC3CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */; };
+		732D21E91F8AC66600D94D3A /* magmileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732D21E81F8AC66600D94D3A /* magmileTests.swift */; };
 		7371F2F21F6F9995000A21DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73BC8D731F6F96490001C6A3 /* GoogleService-Info.plist */; };
 		737464A31F6F814800B395DF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737464A21F6F814700B395DF /* TabBarViewController.swift */; };
 		737464A51F6F815F00B395DF /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737464A41F6F815F00B395DF /* AccountViewController.swift */; };
@@ -22,10 +23,23 @@
 		AAE8FB6F825344372E48EFA4 /* Pods_magmile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		732D21EB1F8AC66600D94D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73D9B4391F6F71AF0037A589 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D9B4401F6F71AF0037A589;
+			remoteInfo = magmile;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		11481B027B8EF0BDB5A03893 /* Pods-magmile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.debug.xcconfig"; sourceTree = "<group>"; };
 		70F578874B27DD312BC02946 /* Pods-magmile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magmile.release.xcconfig"; path = "Pods/Target Support Files/Pods-magmile/Pods-magmile.release.xcconfig"; sourceTree = "<group>"; };
 		73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		732D21E61F8AC66600D94D3A /* magmileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magmileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		732D21E81F8AC66600D94D3A /* magmileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magmileTests.swift; sourceTree = "<group>"; };
+		732D21EA1F8AC66600D94D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737464A21F6F814700B395DF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		737464A41F6F815F00B395DF /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		737464A61F6F816E00B395DF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		732D21E31F8AC66600D94D3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73D9B43E1F6F71AF0037A589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,10 +83,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		732D21E71F8AC66600D94D3A /* magmileTests */ = {
+			isa = PBXGroup;
+			children = (
+				732D21E81F8AC66600D94D3A /* magmileTests.swift */,
+				732D21EA1F8AC66600D94D3A /* Info.plist */,
+			);
+			path = magmileTests;
+			sourceTree = "<group>";
+		};
 		73D9B4381F6F71AF0037A589 = {
 			isa = PBXGroup;
 			children = (
 				73D9B4431F6F71AF0037A589 /* magmile */,
+				732D21E71F8AC66600D94D3A /* magmileTests */,
 				73D9B4421F6F71AF0037A589 /* Products */,
 				C7E854F4B12E7AD5F32F7B31 /* Pods */,
 				48A747CD4D79CE185C5215E6 /* Frameworks */,
@@ -76,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				73D9B4411F6F71AF0037A589 /* magmile.app */,
+				732D21E61F8AC66600D94D3A /* magmileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +144,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		732D21E51F8AC66600D94D3A /* magmileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732D21EF1F8AC66600D94D3A /* Build configuration list for PBXNativeTarget "magmileTests" */;
+			buildPhases = (
+				732D21E21F8AC66600D94D3A /* Sources */,
+				732D21E31F8AC66600D94D3A /* Frameworks */,
+				732D21E41F8AC66600D94D3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				732D21EC1F8AC66600D94D3A /* PBXTargetDependency */,
+			);
+			name = magmileTests;
+			productName = magmileTests;
+			productReference = 732D21E61F8AC66600D94D3A /* magmileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		73D9B4401F6F71AF0037A589 /* magmile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D9B4531F6F71AF0037A589 /* Build configuration list for PBXNativeTarget "magmile" */;
@@ -142,6 +192,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Codec Software";
 				TargetAttributes = {
+					732D21E51F8AC66600D94D3A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 73D9B4401F6F71AF0037A589;
+					};
 					73D9B4401F6F71AF0037A589 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -162,11 +217,19 @@
 			projectRoot = "";
 			targets = (
 				73D9B4401F6F71AF0037A589 /* magmile */,
+				732D21E51F8AC66600D94D3A /* magmileTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		732D21E41F8AC66600D94D3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73D9B43F1F6F71AF0037A589 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +323,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		732D21E21F8AC66600D94D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732D21E91F8AC66600D94D3A /* magmileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73D9B43D1F6F71AF0037A589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,7 +349,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		732D21EC1F8AC66600D94D3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73D9B4401F6F71AF0037A589 /* magmile */;
+			targetProxy = 732D21EB1F8AC66600D94D3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		732D21ED1F8AC66600D94D3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936B9Q7LU8;
+				INFOPLIST_FILE = magmileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codec.software.magmileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magmile.app/magmile";
+			};
+			name = Debug;
+		};
+		732D21EE1F8AC66600D94D3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936B9Q7LU8;
+				INFOPLIST_FILE = magmileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = codec.software.magmileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magmile.app/magmile";
+			};
+			name = Release;
+		};
 		73D9B4511F6F71AF0037A589 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +540,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		732D21EF1F8AC66600D94D3A /* Build configuration list for PBXNativeTarget "magmileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732D21ED1F8AC66600D94D3A /* Debug */,
+				732D21EE1F8AC66600D94D3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73D9B43C1F6F71AF0037A589 /* Build configuration list for PBXProject "magmile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
