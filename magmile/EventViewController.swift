@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreDataStructures
 
 class EventViewController: UIViewController {
     

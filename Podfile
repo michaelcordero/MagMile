@@ -7,4 +7,5 @@ target 'magmile' do
 
   # Pods for magmile
    pod 'FirebaseUI'
+   pod 'CoreDataStructures'
 end
