@@ -8,14 +8,14 @@
 
 import UIKit
 
-class NewsViewController: UICollectionViewController {
+class NewsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellID = "cellID"
     
     override init(collectionViewLayout layout: UICollectionViewLayout) {
         super.init(collectionViewLayout: layout)
         self.tabBarItem = UITabBarItem.init(title: "News", image: #imageLiteral(resourceName: "newsfeed"), tag: 0)
-        self.collectionView?.backgroundColor = UIColor(white: 0.95, alpha:1)
+        self.collectionView?.backgroundColor = UIColor(white: 0.95, alpha: 1)
         self.navigationItem.title = "Mag Mile Bartenders"
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
     }
@@ -26,7 +26,8 @@ class NewsViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // collectionView?.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        collectionView?.register(NewsCell.self, forCellWithReuseIdentifier: cellID)
+        collectionView?.alwaysBounceVertical = true
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,12 +37,16 @@ class NewsViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: view.frame.width, height: 200)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
 }
+
+

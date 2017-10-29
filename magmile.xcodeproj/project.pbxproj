@@ -152,9 +152,9 @@
 				73D8E0111FA5755900DBC4EE /* Model */,
 				73D8E0121FA5756100DBC4EE /* Views */,
 				73D8E0101FA5754000DBC4EE /* Controllers */,
-				73D9B44B1F6F71AF0037A589 /* Assets.xcassets */,
-				73D9B4501F6F71AF0037A589 /* Info.plist */,
 				73BC8D731F6F96490001C6A3 /* GoogleService-Info.plist */,
+				73D9B4501F6F71AF0037A589 /* Info.plist */,
+				73D9B44B1F6F71AF0037A589 /* Assets.xcassets */,
 			);
 			path = magmile;
 			sourceTree = "<group>";

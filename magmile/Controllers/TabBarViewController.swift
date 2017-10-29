@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
         super.viewDidLoad()
-        
+  
         //Prepare child view controllers
         let nav: UINavigationController = UINavigationController()
         let nvc: NewsViewController = NewsViewController(collectionViewLayout: UICollectionViewFlowLayout())
@@ -30,6 +30,7 @@ class TabBarViewController: UITabBarController {
         let cvc: MessageViewController = MessageViewController()
         let controllers: [UIViewController] = [nav,evc,mvc,avc,cvc]
         self.viewControllers = controllers
+        self.selectedViewController = mvc         //TODO - This is a workaround for a bug. Selected VC should be "nav", but there is a navbar sizing issue.
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +49,7 @@ class TabBarViewController: UITabBarController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
     }
     
 //    private func isUserSignedIn() -> Bool {
