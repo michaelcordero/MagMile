@@ -20,6 +20,7 @@
 		73B0FE451F737C1900DAED74 /* AuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B0FE441F737C1900DAED74 /* AuthenticationType.swift */; };
 		73D9B4451F6F71AF0037A589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9B4441F6F71AF0037A589 /* AppDelegate.swift */; };
 		73D9B44C1F6F71AF0037A589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D9B44B1F6F71AF0037A589 /* Assets.xcassets */; };
+		73F1E5451FA5773000EAA636 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F1E5441FA5773000EAA636 /* NewsCell.swift */; };
 		AAE8FB6F825344372E48EFA4 /* Pods_magmile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		73D9B4441F6F71AF0037A589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D9B44B1F6F71AF0037A589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D9B4501F6F71AF0037A589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F1E5441FA5773000EAA636 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		EC3B1F5D7A4E9533BC3577CB /* Pods_magmile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_magmile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,38 @@
 			path = magmileTests;
 			sourceTree = "<group>";
 		};
+		73D8E0101FA5754000DBC4EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				737464A21F6F814700B395DF /* TabBarViewController.swift */,
+				737464A41F6F815F00B395DF /* AccountViewController.swift */,
+				737464A61F6F816E00B395DF /* EventViewController.swift */,
+				737464A81F6F817800B395DF /* MessageViewController.swift */,
+				737464AA1F6F817F00B395DF /* NewsViewController.swift */,
+				737464AC1F6F818D00B395DF /* MerchandiseViewController.swift */,
+				73A4B00D1F7220B400831AAA /* ErrorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73D8E0111FA5755900DBC4EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73D9B4441F6F71AF0037A589 /* AppDelegate.swift */,
+				73B0FE441F737C1900DAED74 /* AuthenticationType.swift */,
+				73F1E5441FA5773000EAA636 /* NewsCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73D8E0121FA5756100DBC4EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		73D9B4381F6F71AF0037A589 = {
 			isa = PBXGroup;
 			children = (
@@ -115,19 +149,12 @@
 		73D9B4431F6F71AF0037A589 /* magmile */ = {
 			isa = PBXGroup;
 			children = (
-				73D9B4441F6F71AF0037A589 /* AppDelegate.swift */,
-				737464A21F6F814700B395DF /* TabBarViewController.swift */,
-				737464A41F6F815F00B395DF /* AccountViewController.swift */,
-				737464A61F6F816E00B395DF /* EventViewController.swift */,
-				737464A81F6F817800B395DF /* MessageViewController.swift */,
-				737464AA1F6F817F00B395DF /* NewsViewController.swift */,
-				737464AC1F6F818D00B395DF /* MerchandiseViewController.swift */,
-				73A4B00D1F7220B400831AAA /* ErrorViewController.swift */,
+				73D8E0111FA5755900DBC4EE /* Model */,
+				73D8E0121FA5756100DBC4EE /* Views */,
+				73D8E0101FA5754000DBC4EE /* Controllers */,
 				73D9B44B1F6F71AF0037A589 /* Assets.xcassets */,
 				73D9B4501F6F71AF0037A589 /* Info.plist */,
 				73BC8D731F6F96490001C6A3 /* GoogleService-Info.plist */,
-				73296BA11F7376F100EC3CAA /* LaunchScreen.storyboard */,
-				73B0FE441F737C1900DAED74 /* AuthenticationType.swift */,
 			);
 			path = magmile;
 			sourceTree = "<group>";
@@ -341,6 +368,7 @@
 				737464A71F6F816E00B395DF /* EventViewController.swift in Sources */,
 				737464AD1F6F818D00B395DF /* MerchandiseViewController.swift in Sources */,
 				73D9B4451F6F71AF0037A589 /* AppDelegate.swift in Sources */,
+				73F1E5451FA5773000EAA636 /* NewsCell.swift in Sources */,
 				737464AB1F6F817F00B395DF /* NewsViewController.swift in Sources */,
 				73A4B00E1F7220B400831AAA /* ErrorViewController.swift in Sources */,
 				73B0FE451F737C1900DAED74 /* AuthenticationType.swift in Sources */,

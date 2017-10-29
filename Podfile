@@ -6,6 +6,6 @@ target 'magmile' do
   use_frameworks!
 
   # Pods for magmile
-   pod 'FirebaseUI'
-   pod 'CoreDataStructures'
+   #pod 'FirebaseUI'
+   #pod 'CoreDataStructures'
 end

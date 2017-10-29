@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseAuthUI
+//import FirebaseAuthUI
 
 class AccountViewController: UIViewController {
     
@@ -47,13 +47,13 @@ class AccountViewController: UIViewController {
         signOut.setTitle("Sign Out", for: UIControlState.normal)
         signOut.setTitleColor(UIColor.red, for: UIControlState.normal)
         signOut.actions(forTarget: self, forControlEvent: UIControlEvents.touchUpInside)
-        signOut.addTarget(self, action: #selector(self.signUserOut), for: UIControlEvents.touchUpInside)
+        //signOut.addTarget(self, action: #selector(self.signUserOut), for: UIControlEvents.touchUpInside)
         return signOut
     }
     
-    @objc func signUserOut() -> Void {
-        try! FUIAuth.defaultAuthUI()?.auth?.signOut()
-        present(TabBarViewController(), animated: false, completion: nil)
-    }
+//    @objc func signUserOut() -> Void {
+//        try! FUIAuth.defaultAuthUI()?.auth?.signOut()
+//        present(TabBarViewController(), animated: false, completion: nil)
+//    }
 
 }

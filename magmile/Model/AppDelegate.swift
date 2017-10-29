@@ -7,32 +7,32 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuthUI
-import FirebaseGoogleAuthUI
-import FirebaseFacebookAuthUI
+//import Firebase
+//import FirebaseAuthUI
+//import FirebaseGoogleAuthUI
+//import FirebaseFacebookAuthUI
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate/*, FUIAuthDelegate */ {
     
     //MARK: Properties
     var window: UIWindow?
-    public var authUI: FUIAuth?
-    let providers: [FUIAuthProvider] = [FUIFacebookAuth(),FUIGoogleAuth()]
-    public var authSource: AuthenticationType?
+//    public var authUI: FUIAuth?
+//    let providers: [FUIAuthProvider] = [FUIFacebookAuth(),FUIGoogleAuth()]
+//    public var authSource: AuthenticationType?
     
     
     //MARK: Application Functions
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
-        
+        //FirebaseApp.configure()
+
         //FirebaseUI
-        authUI = FUIAuth.defaultAuthUI()
-        authUI?.isSignInWithEmailHidden = true
-        authUI?.delegate = self
-        authUI?.providers = providers
+//        authUI = FUIAuth.defaultAuthUI()
+//        authUI?.isSignInWithEmailHidden = true
+//        authUI?.delegate = self
+//        authUI?.providers = providers
         
         //Launch
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -62,43 +62,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        try! authUI?.signOut()      //probably want to log user activity
+        //try! authUI?.signOut()      //probably want to log user activity
     }
     
     //Handles Google/Facebook Authentication Url
     //@available(iOS 9.0, *)
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
-        authSource = AuthenticationType.match(url: url)
-        let handled = authUI?.handleOpen(url, sourceApplication: sourceApplication) ?? false
-        return handled
-    }
-    
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        let sourceApplicationOptions: String? = sourceApplication
-        authSource = AuthenticationType.match(url: url)
-        let handled = authUI?.handleOpen(url, sourceApplication: sourceApplicationOptions)
-        return handled!
-    }
-    
-    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-        let name: String = user?.displayName ?? "Name not found!"
-        print("User: \(name) SIGNED IN WITH: \(authSource.debugDescription)")
-    }
-    
-    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
-        return FUIAuthPickerViewController(authUI: authUI)  //optional protocol method, but lots of network errors are generated w/o
-    }
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+//        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+//        authSource = AuthenticationType.match(url: url)
+//        let handled = authUI?.handleOpen(url, sourceApplication: sourceApplication) ?? false
+//        return handled
+//    }
+//
+//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+//        let sourceApplicationOptions: String? = sourceApplication
+//        authSource = AuthenticationType.match(url: url)
+//        let handled = authUI?.handleOpen(url, sourceApplication: sourceApplicationOptions)
+//        return handled!
+//    }
+//
+//    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+//        let name: String = user?.displayName ?? "Name not found!"
+//        print("User: \(name) SIGNED IN WITH: \(authSource.debugDescription)")
+//    }
+//
+//    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
+//        return FUIAuthPickerViewController(authUI: authUI)  //optional protocol method, but lots of network errors are generated w/o
+//    }
     
 }
 
-extension FUIAuthBaseViewController {
-    open override func viewWillAppear(_ animated: Bool){
-        self.navigationController?.navigationBar.isHidden = true
-        let logo: UIImageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        logo.image = UIImage.init(named: "LoginScreen")
-        self.view.addSubview(logo)
-        self.view.sendSubview(toBack: logo)
-    }
-}
+//extension FUIAuthBaseViewController {
+//    open override func viewWillAppear(_ animated: Bool){
+//        self.navigationController?.navigationBar.isHidden = true
+//        let logo: UIImageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+//        logo.image = UIImage.init(named: "LoginScreen")
+//        self.view.addSubview(logo)
+//        self.view.sendSubview(toBack: logo)
+//    }
+
+
 

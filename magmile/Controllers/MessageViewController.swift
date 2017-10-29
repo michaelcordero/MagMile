@@ -1,5 +1,5 @@
 //
-//  ChatViewController.swift
+//  MessageViewController.swift
 //  magmile
 //
 //  Created by Michael Cordero on 9/17/17.
